@@ -12,7 +12,7 @@ public class Item {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
+	
 	@Column
 	private String name;
 
@@ -23,7 +23,7 @@ public class Item {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
+	
 	public String getName() {
 		return name;
 	}
@@ -31,7 +31,8 @@ public class Item {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 
-	// getters e setters
 
 }

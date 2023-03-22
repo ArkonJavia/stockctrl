@@ -32,7 +32,10 @@ public class Order {
 	@ManyToOne
 	@JoinColumn(name = "user_id", referencedColumnName = "id")
 	private User user;
-
+	
+	@Column
+	private Boolean completed;
+	
 	public Long getId() {
 		return id;
 	}
@@ -71,6 +74,14 @@ public class Order {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	public Boolean getCompleted() {
+		return completed;
+	}
+
+	public void setCompleted(Boolean completed) {
+		this.completed = completed;
 	}
 
 }
