@@ -14,7 +14,7 @@ GRANT ALL PRIVILEGES ON DATABASE test TO admin;
 ALTER USER admin WITH SUPERUSER;
 \q
 d
-(ver script para criação do banco dentro do projeto):
+(ver script para criação do banco e carga inicial de dados dentro do projeto):
 
 Criaçao do Projeto.
 Utilizei o site https://start.spring.io com as seguintes definiçoes:
