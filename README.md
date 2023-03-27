@@ -44,4 +44,4 @@ Os endpoints de entrada basicos sao (POSTS) e respectivos bodyrequests são:
   "item": {
     "id": 1
   }
-})
+}
