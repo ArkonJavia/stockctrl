@@ -18,7 +18,7 @@ d
 
 Criaçao do Projeto.
 Utilizei o site https://start.spring.io com as seguintes definiçoes:
-- Maven project, java, spring 3.0.4, jar, java8;
+- Maven project, java, spring 2.7.9, jar, java8;
 - Dependencias incluídas: spring web, spring data jpa, postgresql driver, spring boot devtools, spring actuator;
 - nao foi encontrada a log4j, que foi adicionado e configurado posteriormente.
 
