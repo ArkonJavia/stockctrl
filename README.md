@@ -26,10 +26,7 @@ Utilizei o site https://start.spring.io com as seguintes definiçoes:
 Para executar os testes, existe um outro arquivo dentro de resources com exemplos de requests.
 Os endpoints de entrada basicos sao (POSTS) e respectivos bodyrequests são: 
 
-[http://localhost:8080/stock/create e 
 http://localhost:8080/orders/create
-
-Os Bodyrequests para os respectivos endpoints são:](http://localhost:8080/orders/create
 {
   "item": {
     "id": 1
