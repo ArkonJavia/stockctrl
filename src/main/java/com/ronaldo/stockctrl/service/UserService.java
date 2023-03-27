@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ronaldo.stockctrl.config.entity.User;
-import com.ronaldo.stockctrl.config.entity.repository.UserRepository;
+import com.ronaldo.stockctrl.config.entity.repository.IUserRepository;
 
 @Service
 public class UserService implements IUserService {
 
 	@Autowired
-	private UserRepository userRepository;
+	private IUserRepository userRepository;
 
 	@Override
 	public List<User> getUsers() {

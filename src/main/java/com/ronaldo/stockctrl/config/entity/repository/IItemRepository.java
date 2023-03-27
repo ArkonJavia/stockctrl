@@ -2,8 +2,8 @@ package com.ronaldo.stockctrl.config.entity.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.ronaldo.stockctrl.config.entity.Stock;
+import com.ronaldo.stockctrl.config.entity.Item;
 
-public interface StockRepository  extends JpaRepository<Stock, Long> {
+public interface IItemRepository extends JpaRepository<Item, Long> {
 
 }

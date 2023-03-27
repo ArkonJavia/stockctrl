@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ronaldo.stockctrl.config.entity.Stock;
-import com.ronaldo.stockctrl.config.entity.repository.StockRepository;
+import com.ronaldo.stockctrl.config.entity.repository.IStockRepository;
 
 @Service
 public class StockService implements IStockService {
 	
 	@Autowired
-	private StockRepository stockRepository;
+	private IStockRepository stockRepository;
 
 	@Override
 	public List<Stock> getAllStock() {

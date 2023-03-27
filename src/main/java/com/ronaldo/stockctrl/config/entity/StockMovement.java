@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -25,6 +26,10 @@ public class StockMovement {
 	@ManyToOne
 	@JoinColumn(name = "item_id", referencedColumnName = "id")
 	private Item item;
+	
+	@OneToOne
+	@JoinColumn(name = "order_id", referencedColumnName = "id")
+	private Order order;
 
 	@Column
 	private Integer quantity;
@@ -59,6 +64,14 @@ public class StockMovement {
 
 	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
+	}
+
+	public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
 	}
 
 }

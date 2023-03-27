@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ronaldo.stockctrl.config.entity.Item;
-import com.ronaldo.stockctrl.config.entity.repository.ItemRepository;
+import com.ronaldo.stockctrl.config.entity.repository.IItemRepository;
 
 @Service
 public class ItemService implements IItemService {
 
 	@Autowired
-	private ItemRepository itemRepository;
+	private IItemRepository itemRepository;
 
 	@Override
 	public List<Item> getAllItems() {
