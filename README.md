@@ -45,3 +45,13 @@ Os endpoints de entrada basicos sao (POSTS) e respectivos bodyrequests são:
     "id": 1
   }
 }
+
+Fluxo básico de funcionamento:
+Inserir usuário;
+Cadastrar produto;
+Castrar estoque;
+Cadastrar ordem.
+
+Assim que uma ordem é cadastrada, caso haja o produto em estoque, a ordem é gerada uma movimentação de estoque e é enviado um email ao usuário dizendo que sua ordem está completa;
+Caso não haja itens o suficiente em estoque, a ordem é criada e fica em aberto;
+Quando um novo estoque for cadastrado, ele verificará se existem ordens em aberto para aquele item. Caso sim, ele tentará completa-la, tendo como prioridade as mais antigas. Caso consiga completar alguma, um e-mail é enviado ao usuário.
